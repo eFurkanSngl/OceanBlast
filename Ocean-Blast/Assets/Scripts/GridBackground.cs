@@ -14,7 +14,7 @@ public class GridBackground : MonoBehaviour
     {
         if(_sr != null)
         {
-            transform.position = new Vector3(gridX / 2.3f - _padding, gridY / 2.5f - _padding, 1f);
+            transform.position = new Vector3(gridX / 2.3f - _padding, gridY / 1.6f - _padding, 1f);
             _sr.size = new Vector3(gridX + _padding, gridY + _padding, 1f);
         }
     }

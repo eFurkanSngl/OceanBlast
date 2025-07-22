@@ -32,7 +32,7 @@ public class TilePool : MonoBehaviour
             {
                 GameObject obj = Instantiate(prefab);
                 obj.SetActive(false);
-                obj.transform.parent = transform;
+                //obj.transform.parent = transform;
                 pools.Enqueue(obj);
             }
 

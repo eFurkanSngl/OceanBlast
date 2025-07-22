@@ -27,9 +27,9 @@ public class BlastCameraSetup : MonoBehaviour
         float targetRatio = (float)gridX / gridY;
 
         if (screenRatio >= targetRatio)
-            _cam.orthographicSize = gridY / 1.6f;
+            _cam.orthographicSize = gridY / 1.2f;
         else
-            _cam.orthographicSize = (gridX / screenRatio) / 1.6f;
+            _cam.orthographicSize = (gridX / screenRatio) / 1.2f;
 
         Debug.Log("working");
     }
