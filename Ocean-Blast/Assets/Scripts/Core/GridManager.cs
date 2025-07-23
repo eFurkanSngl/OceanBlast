@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -8,7 +9,9 @@ using Zenject;
 public class GridManager : MonoBehaviour
 {
     public static event UnityAction<int, int> GridManagerEvents;
+    public static event UnityAction GridSpawnCompleted;
     [SerializeField] private float _spacing = 1f;
+    [SerializeField] private Camera _mainCam;
     private GridData _gridData;
     private TilePool _tilePool;
 
@@ -23,6 +26,7 @@ public class GridManager : MonoBehaviour
     {
         GenerateGrid();
         _gridData.DebugTileCounts();
+        AnimEvents.CamEvents?.Invoke();
     }
 
     private void GenerateGrid()
@@ -56,5 +60,7 @@ public class GridManager : MonoBehaviour
         }
         Debug.Log("Event is worked");
         GridManagerEvents?.Invoke(gridX, gridY);
+        GridSpawnCompleted?.Invoke();
+
     }
 }

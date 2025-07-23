@@ -60,9 +60,10 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.34f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Events\CameraEvent.cs" />
+    <Compile Include="Assets\Scripts\Handler\AnimationHandler.cs" />
     <Compile Include="Assets\Scripts\Installer\SceneInstaller.cs" />
     <Compile Include="Assets\Scripts\Core\GridManager.cs" />
+    <Compile Include="Assets\Scripts\Interface\IAlhpaAdjustable.cs" />
     <Compile Include="Assets\Scripts\Core\Tile.cs" />
     <Compile Include="Assets\Scripts\GoalBox.cs" />
     <Compile Include="Assets\Scripts\Installer\GridDataInstaller.cs" />
@@ -70,7 +71,12 @@
     <Compile Include="Assets\Scripts\Pooling\TilePool.cs" />
     <Compile Include="Assets\Scripts\ScriptableObject\GridData.cs" />
     <Compile Include="Assets\Scripts\Installer\ProjectInstallar.cs" />
+    <Compile Include="Assets\Scripts\AlphaAdjust.cs" />
     <Compile Include="Assets\Scripts\GridBackground.cs" />
+    <Compile Include="Assets\Scripts\Interface\IOutLineDrawable.cs" />
+    <Compile Include="Assets\Scripts\OutLineDrawer.cs" />
+    <Compile Include="Assets\Scripts\Events\AnimEvents.cs" />
+    <Compile Include="Assets\Scripts\GoalItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

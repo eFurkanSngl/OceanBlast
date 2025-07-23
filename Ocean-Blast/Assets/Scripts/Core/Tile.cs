@@ -4,6 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 using TMPro;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Zenject;
 
 public class Tile : MonoBehaviour
 {
@@ -11,22 +12,31 @@ public class Tile : MonoBehaviour
 
     private SpriteRenderer _sr;
     public TileColor tileColor { get; private set; }
-
     private void Awake()
     {
         _sr = GetComponent<SpriteRenderer>();
     }
+   
     public void Initialize(TileColor color)
     {
         tileColor = color;
-        SwapnEffect();
+        SpawnEffect();
     }
-    private void SwapnEffect()
+    private void SpawnEffect()
     {
         transform.localScale = Vector3.zero;
-        transform.DOScale(Vector3.one, 0.25f).SetEase(Ease.OutBack);
 
-        if(_sr != null)
+        transform.DOScale(Vector3.one, 0.25f)
+            .SetEase(Ease.OutBack)
+            .OnComplete(() =>
+            {
+                // Pulse Scale (nefes alma efekti)
+                transform.DOScale(Vector3.one * 1.1f, 0.5f)
+                    .SetEase(Ease.InOutSine)
+                    .SetLoops(3, LoopType.Yoyo);
+            });
+
+        if (_sr != null)
         {
             Color originColor = _sr.color;
             Color brightColor = originColor * 1.5f;
