@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine.UI;
 using Zenject;
+using System.Linq;
 
 public class GoalBox : MonoBehaviour
 {
@@ -25,6 +26,7 @@ public class GoalBox : MonoBehaviour
     [SerializeField] private float _delay = 0.1f;
 
     [Inject] private TilePool _tilePool;
+    [Inject] private LauncherManager _launcherManager;
     private void OnGridSpawn()
     {
         _mainCam.GetComponent<AudioSource>().Play();
@@ -47,7 +49,7 @@ public class GoalBox : MonoBehaviour
         // Rastgele pozisyonlar için karıştır
         Shuffle(allBoxes);
 
-        int totalToSpawn = _go.Length * 2;
+        int totalToSpawn = _go.Length * 3;
         if (allBoxes.Count < totalToSpawn)
         {
             Debug.LogWarning("boxes not enough!");
@@ -57,27 +59,31 @@ public class GoalBox : MonoBehaviour
         int index = 0;
         foreach (GameObject prefab in _go)
         {
-            for (int i = 0; i < 2; i++)
+            for (int i = 0; i < 3; i++)
             {
                 Transform targetBox = allBoxes[index];
-                GameObject newObj = Instantiate(prefab,targetBox);
+                GameObject newObj = Instantiate(prefab,targetBox); // Aslında GoalItem
                 newObj.transform.localPosition = Vector3.zero;
-                //newObj.transform.localScale = Vector3.one * 110f;
 
                 if (closedBoxList.Contains(targetBox))
                 {
                   AlphaAdjustable(newObj);
                 }
 
-                Tile tile = newObj.GetComponent<Tile>();
-                if(tile != null && newObj.TryGetComponent<GoalItem>(out var goalItem))
+                if(newObj.TryGetComponent<GoalItem>(out var goalItem)) // objede Goalıtem ulaştık
                 {
-                    int id = tile.GetId();
-                    Tile.TileColor color = tile.tileColor;
-                    int totalCount = _tilePool.tileCount[id];
-                    goalItem.Initialize(id,color,totalCount / totalToSpawn);
+                  int id = (int)goalItem.GetColor();  // rengi aldık o renge gelen ID aldık
+                  int totalCount = _tilePool.TileCount[id]; // havuzda o ID ye ait toplam Count
+                  goalItem.Initialize(totalCount / 3);  // Text için count / 3 ( aslında prefab sayısı )
                 }
 
+                if(newObj.TryGetComponent<GoalItemClickHandler>(out var goalItemClickHandler))
+                {
+                    if (_openBox.Contains(targetBox))
+                    {
+                        goalItemClickHandler.Set(this);
+                    }
+                }
                 index++;
             }
         }
@@ -87,6 +93,14 @@ public class GoalBox : MonoBehaviour
         if (obj.TryGetComponent<IOutLineDrawable>(out var outLine))
         {
             outLine.DrawOutLine(_outLineColor, _outLineSize);
+        }
+    }
+    private void RemoveOutLine(GameObject obj)
+    {
+        Outline outLine = obj.GetComponent<Outline>();
+       if(outLine != null)
+        {
+            outLine.enabled = false;
         }
     }
     private void AlphaAdjustable(GameObject obj)
@@ -128,6 +142,8 @@ public class GoalBox : MonoBehaviour
             DrawOutLines(child);
         }
     }
+
+        
     //Tuple shuffle 
     private void Shuffle(List<Transform> list)
     {
@@ -136,6 +152,30 @@ public class GoalBox : MonoBehaviour
             int rand = Random.Range(i, list.Count);
             (list[i], list[rand]) = (list[rand], list[i]);
         }
+    }
+
+    public void OnGoalItemClicked(GameObject clickedObject)
+    {
+        if(_launcherManager.HasEmptyBox(out int emptyIndex))
+        {
+            OpenBoxClickEvent.ClickSoundEvent?.Invoke();
+            clickedObject.transform.SetParent(_launcherManager.GetBoxTransform(emptyIndex));
+            ClickedAnimation(clickedObject,emptyIndex);
+            RemoveOutLine(clickedObject);
+            DOTween.Kill(clickedObject);
+        }
+    }
+
+    private void ClickedAnimation(GameObject gameObject, int index)
+    {
+        gameObject.transform.DOMove(_launcherManager.GetBoxTransform(index).position, 0.4f)
+            .SetEase(Ease.InOutSine)
+            .OnComplete(() =>
+            {
+                gameObject.transform.localPosition = Vector3.zero;
+                gameObject.transform.localScale = Vector3.one;
+                _launcherManager.PlaceGoalItem(gameObject.GetComponent<GoalItem>(), index);
+            });
     }
 
     private void RegisterEvents() => GridManager.GridSpawnCompleted += OnGridSpawn;

@@ -6,22 +6,26 @@ using UnityEngine;
 
 public class GoalItem : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI _countText;
-
-    private int _tileID;
-    private Tile.TileColor _tileColor;
-    private int _targetCount;
-    private int _currentCount;
-
-    public void Initialize(int id , Tile.TileColor color , int count)
+    [Serializable]
+    public class GoalItemData
     {
-        _tileID = id;
-        _tileColor = color;
-        _targetCount = count;
+        //public int tileId;
+        public Tile.TileColor tileColor;
+    }
+
+    [SerializeField] private TextMeshProUGUI _countText;
+    [SerializeField] private GoalItemData _goalItemData;
+    private int _currentCount;
+    
+
+    public void Initialize(int count)
+    {
         _currentCount = count;
         UpdateText();
     }
 
+    public int GetID() => (int)_goalItemData.tileColor;
+    public Tile.TileColor GetColor() => _goalItemData.tileColor;
     private void UpdateText()
     {
         if( _countText != null )

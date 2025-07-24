@@ -16,7 +16,9 @@ public class TilePool : MonoBehaviour
     [SerializeField] private List<TilePrefabData> _tiledata;
 
     private Dictionary<int,Queue<GameObject>> _tilePools = new Dictionary<int, Queue<GameObject>>();
-    public Dictionary<int,int> tileCount = new Dictionary<int,int>();
+    private Dictionary<int,int> tileCount = new Dictionary<int,int>();
+
+    public Dictionary<int,int> TileCount => tileCount;
 
     private void Awake()
     {
