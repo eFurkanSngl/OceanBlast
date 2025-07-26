@@ -17,4 +17,12 @@ public class AlphaAdjust : MonoBehaviour, IAlphaAdjustable
             _image.color = color;
         }
     }
+
+    public void AlphaAdjustable(GameObject obj, float alphaValue)
+    {
+        if(obj.TryGetComponent<IAlphaAdjustable>(out var alpa))
+        {
+            alpa.SetAlpha(alphaValue);
+        }
+    }
 }

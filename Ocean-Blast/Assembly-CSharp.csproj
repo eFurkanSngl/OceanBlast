@@ -60,7 +60,6 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.34f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Events\OpenBoxClickEvent.cs" />
     <Compile Include="Assets\Scripts\Handler\AnimationHandler.cs" />
     <Compile Include="Assets\Scripts\Installer\SceneInstaller.cs" />
     <Compile Include="Assets\Scripts\Core\GridManager.cs" />
@@ -77,10 +76,12 @@
     <Compile Include="Assets\Scripts\GridBackground.cs" />
     <Compile Include="Assets\Scripts\Interface\IOutLineDrawable.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\SignalBus\AnimSignalBus.cs" />
     <Compile Include="Assets\Scripts\OutLineDrawer.cs" />
-    <Compile Include="Assets\Scripts\Events\AnimEvents.cs" />
+    <Compile Include="Assets\Scripts\SignalBus\ClickSoundSignals.cs" />
     <Compile Include="Assets\Scripts\GoalItem.cs" />
     <Compile Include="Assets\Scripts\Handler\GoalItemClickHandler.cs" />
+    <Compile Include="Assets\Scripts\Pooling\TrailPool.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

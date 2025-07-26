@@ -1,23 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Zenject;
 
 public class AudioManager : MonoBehaviour
 {
     [SerializeField] private AudioSource _clickSound;
+    [Inject] private SignalBus _signalBus;
 
     private void OpenBoxClick()
     {
         _clickSound.Play();
     }
 
-    private void OnEnable()
+    private void Start()
     {
-        OpenBoxClickEvent.ClickSoundEvent += OpenBoxClick;
+        _signalBus.Subscribe<ClickSoundSignals>(OpenBoxClick);
     }
 
-    private void OnDisable()
+    private void OnDestroy()
     {
-        OpenBoxClickEvent.ClickSoundEvent -= OpenBoxClick;
+        _signalBus.Unsubscribe<ClickSoundSignals>(OpenBoxClick);   
     }
 }

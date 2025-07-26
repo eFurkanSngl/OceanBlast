@@ -40,12 +40,10 @@ public class BlastCameraSetup : MonoBehaviour
     }
     private void OnEnable()
     {
-        Debug.Log("RegisterEvents");
         RegisterEvents();
     }
     private void OnDisable()
     {
-        Debug.Log("UnRegigsterEvetns");
         UnRegisterEvents();
     }
     private void RegisterEvents() => GridManager.GridManagerEvents += SetupCamera;

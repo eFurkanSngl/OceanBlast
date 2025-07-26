@@ -376,8 +376,6 @@
 "Assets/Scripts/CameraSettings.cs"
 "Assets/Scripts/Core/GridManager.cs"
 "Assets/Scripts/Core/Tile.cs"
-"Assets/Scripts/Events/AnimEvents.cs"
-"Assets/Scripts/Events/OpenBoxClickEvent.cs"
 "Assets/Scripts/GoalBox.cs"
 "Assets/Scripts/GoalItem.cs"
 "Assets/Scripts/GridBackground.cs"
@@ -391,7 +389,10 @@
 "Assets/Scripts/LauncherManager.cs"
 "Assets/Scripts/OutLineDrawer.cs"
 "Assets/Scripts/Pooling/TilePool.cs"
+"Assets/Scripts/Pooling/TrailPool.cs"
 "Assets/Scripts/ScriptableObject/GridData.cs"
+"Assets/Scripts/SignalBus/AnimSignalBus.cs"
+"Assets/Scripts/SignalBus/ClickSoundSignals.cs"
 -langversion:9.0
 /deterministic
 /optimize+

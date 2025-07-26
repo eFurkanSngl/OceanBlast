@@ -14,6 +14,7 @@ public class GridManager : MonoBehaviour
     [SerializeField] private Camera _mainCam;
     private GridData _gridData;
     private TilePool _tilePool;
+    [Inject] private SignalBus _signalBus;
 
     [Inject]
     public void StructInject(GridData gridData,TilePool tilePool)
@@ -26,7 +27,7 @@ public class GridManager : MonoBehaviour
     {
         GenerateGrid();
         _gridData.DebugTileCounts();
-        AnimEvents.CamEvents?.Invoke();
+        _signalBus.Fire<AnimSignalBus>();
     }
 
     private void GenerateGrid()

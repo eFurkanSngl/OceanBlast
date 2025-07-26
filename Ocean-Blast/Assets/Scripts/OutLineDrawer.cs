@@ -25,4 +25,17 @@ public class OutLineDrawer : MonoBehaviour, IOutLineDrawable
                 0.25f);
         }
     }
+
+    public void DrawOutLines(GameObject obj,Color color,Vector3 outLineSize)
+    {
+        if(obj.TryGetComponent<IOutLineDrawable>(out var outLine))
+        {
+            outLine.DrawOutLine(color,outLineSize);
+        }
+    }
+
+    public void DisableOutLine()
+    {
+        _outLine.enabled=false;
+    }
 }
