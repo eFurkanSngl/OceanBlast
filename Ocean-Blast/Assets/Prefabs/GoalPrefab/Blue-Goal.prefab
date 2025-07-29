@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: -6696017119383335072}
   - component: {fileID: -5611869250437285147}
   - component: {fileID: -1714714347989538586}
+  - component: {fileID: -7861313054031094059}
   m_Layer: 5
   m_Name: Blue-Goal
   m_TagString: Untagged
@@ -183,6 +184,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb91ce18c3f277d47a5d49de27cacc18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!225 &-7861313054031094059
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5461012820363678962}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &8187565079081851247
 GameObject:
   m_ObjectHideFlags: 0

@@ -99,10 +99,12 @@ public class GoalBox : MonoBehaviour
     }
     private void CloseBoxAlphaEffect(Transform target,GameObject obj)
     {
-        AlphaAdjust alpha = obj.GetComponent<AlphaAdjust>();
-        if (closedBoxList.Contains(target))
+        if(obj.TryGetComponent<AlphaAdjust>(out var alpha))
         {
-            alpha.AlphaAdjustable(obj, 0.5f);
+            if (closedBoxList.Contains(target))
+            {
+                alpha.AlphaAdjustable(obj, 0.5f);
+            }
         }
     }
     
@@ -221,6 +223,7 @@ public class GoalBox : MonoBehaviour
                     goalItem.transform.DOMove(openBox.position, 0.35f).SetEase(Ease.InOutQuad)
                         .OnComplete(() =>
                         {
+                            _signalBus.Fire<SwapSoundSignalbus>();
                             goalItem.transform.localPosition = Vector3.zero;
                             goalItem.transform.localScale = Vector3.one;
 

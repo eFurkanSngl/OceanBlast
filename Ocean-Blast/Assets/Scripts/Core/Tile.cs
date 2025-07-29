@@ -22,6 +22,7 @@ public class Tile : MonoBehaviour
         tileColor = color;
         SpawnEffect();
     }
+
     private void SpawnEffect()
     {
         transform.localScale = Vector3.zero;

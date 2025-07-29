@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: -5052684979926146369}
   - component: {fileID: 1349605411667741494}
   - component: {fileID: 4455674631134043518}
+  - component: {fileID: 4167151945820544303}
   m_Layer: 5
   m_Name: Yellow-Goal
   m_TagString: Untagged
@@ -193,6 +194,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb91ce18c3f277d47a5d49de27cacc18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!225 &4167151945820544303
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701512097233883412}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &6602724165491586483
 GameObject:
   m_ObjectHideFlags: 0

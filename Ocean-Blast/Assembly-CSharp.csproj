@@ -61,9 +61,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Handler\AnimationHandler.cs" />
+    <Compile Include="Assets\Scripts\SignalBus\MergeSoundBus.cs" />
     <Compile Include="Assets\Scripts\Installer\SceneInstaller.cs" />
     <Compile Include="Assets\Scripts\Core\GridManager.cs" />
     <Compile Include="Assets\Scripts\Interface\IAlhpaAdjustable.cs" />
+    <Compile Include="Assets\Scripts\SignalBus\SwapSoundSignalbus.cs" />
     <Compile Include="Assets\Scripts\LauncherManager.cs" />
     <Compile Include="Assets\Scripts\Core\Tile.cs" />
     <Compile Include="Assets\Scripts\GoalBox.cs" />
@@ -76,12 +78,14 @@
     <Compile Include="Assets\Scripts\GridBackground.cs" />
     <Compile Include="Assets\Scripts\Interface\IOutLineDrawable.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\SignalBus\FireSoundBus.cs" />
     <Compile Include="Assets\Scripts\SignalBus\AnimSignalBus.cs" />
     <Compile Include="Assets\Scripts\OutLineDrawer.cs" />
     <Compile Include="Assets\Scripts\SignalBus\ClickSoundSignals.cs" />
     <Compile Include="Assets\Scripts\GoalItem.cs" />
     <Compile Include="Assets\Scripts\Handler\GoalItemClickHandler.cs" />
     <Compile Include="Assets\Scripts\Pooling\TrailPool.cs" />
+    <Compile Include="Assets\Scripts\Pooling\BulletPool.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

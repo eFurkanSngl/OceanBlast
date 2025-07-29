@@ -10,9 +10,15 @@ public class SceneInstaller : MonoInstaller
         Container.Bind<TilePool>().FromComponentInHierarchy().AsSingle();
         Container.Bind<LauncherManager>().FromComponentInHierarchy().AsSingle();
         Container.Bind<TrailPool>().FromComponentInHierarchy().AsSingle();
+        Container.Bind<GridManager>().FromComponentInHierarchy().AsSingle();
+        Container.Bind<BulletPool>().FromComponentInHierarchy().AsSingle();
+        Container.Bind<AnimationHandler>().FromComponentInHierarchy().AsSingle();
         InstallSignalBus();
         Container.DeclareSignal<ClickSoundSignals>();
         Container.DeclareSignal<AnimSignalBus>();
+        Container.DeclareSignal<SwapSoundSignalbus>();
+        Container.DeclareSignal<MergeSoundBus>();
+        Container.DeclareSignal<FireSoundBus>();
     }
 
 

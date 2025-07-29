@@ -345,6 +345,9 @@
 -r:"Library/Bee/artifacts/1300b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1300b0aE.dag/Unity.Recorder.Base.ref.dll"
+-r:"Library/Bee/artifacts/1300b0aE.dag/Unity.Recorder.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1300b0aE.dag/Unity.Recorder.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Unity.Rider.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.ref.dll"
@@ -388,11 +391,15 @@
 "Assets/Scripts/Interface/IOutLineDrawable.cs"
 "Assets/Scripts/LauncherManager.cs"
 "Assets/Scripts/OutLineDrawer.cs"
+"Assets/Scripts/Pooling/BulletPool.cs"
 "Assets/Scripts/Pooling/TilePool.cs"
 "Assets/Scripts/Pooling/TrailPool.cs"
 "Assets/Scripts/ScriptableObject/GridData.cs"
 "Assets/Scripts/SignalBus/AnimSignalBus.cs"
 "Assets/Scripts/SignalBus/ClickSoundSignals.cs"
+"Assets/Scripts/SignalBus/FireSoundBus.cs"
+"Assets/Scripts/SignalBus/MergeSoundBus.cs"
+"Assets/Scripts/SignalBus/SwapSoundSignalbus.cs"
 -langversion:9.0
 /deterministic
 /optimize+

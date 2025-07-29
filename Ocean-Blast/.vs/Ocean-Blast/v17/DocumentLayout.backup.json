@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\aslan\\OneDrive\\Belgeler\\OceanBlast\\Ocean-Blast\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FF84BFDA-1F3F-8673-3649-87C39A483ADA}|Assembly-CSharp.csproj|C:\\Users\\aslan\\OneDrive\\Belgeler\\OceanBlast\\Ocean-Blast\\assets\\scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF84BFDA-1F3F-8673-3649-87C39A483ADA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF84BFDA-1F3F-8673-3649-87C39A483ADA}|Assembly-CSharp.csproj|c:\\users\\aslan\\onedrive\\belgeler\\oceanblast\\ocean-blast\\assets\\scripts\\signalbus\\animsignalbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF84BFDA-1F3F-8673-3649-87C39A483ADA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\signalbus\\animsignalbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF84BFDA-1F3F-8673-3649-87C39A483ADA}|Assembly-CSharp.csproj|C:\\Users\\aslan\\OneDrive\\Belgeler\\OceanBlast\\Ocean-Blast\\assets\\scripts\\handler\\animationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF84BFDA-1F3F-8673-3649-87C39A483ADA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\handler\\animationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF84BFDA-1F3F-8673-3649-87C39A483ADA}|Assembly-CSharp.csproj|C:\\Users\\aslan\\OneDrive\\Belgeler\\OceanBlast\\Ocean-Blast\\assets\\scripts\\core\\gridmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FF84BFDA-1F3F-8673-3649-87C39A483ADA}|Assembly-CSharp.csproj|c:\\users\\aslan\\onedrive\\belgeler\\oceanblast\\ocean-blast\\assets\\scripts\\core\\gridmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF84BFDA-1F3F-8673-3649-87C39A483ADA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\gridmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF84BFDA-1F3F-8673-3649-87C39A483ADA}|Assembly-CSharp.csproj|C:\\Users\\aslan\\OneDrive\\Belgeler\\OceanBlast\\Ocean-Blast\\assets\\scripts\\installer\\sceneinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF84BFDA-1F3F-8673-3649-87C39A483ADA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\installer\\sceneinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FF84BFDA-1F3F-8673-3649-87C39A483ADA}|Assembly-CSharp.csproj|c:\\users\\aslan\\onedrive\\belgeler\\oceanblast\\ocean-blast\\assets\\scripts\\core\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF84BFDA-1F3F-8673-3649-87C39A483ADA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF84BFDA-1F3F-8673-3649-87C39A483ADA}|Assembly-CSharp.csproj|c:\\users\\aslan\\onedrive\\belgeler\\oceanblast\\ocean-blast\\assets\\scripts\\signalbus\\clicksoundsignals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF84BFDA-1F3F-8673-3649-87C39A483ADA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\signalbus\\clicksoundsignals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FF84BFDA-1F3F-8673-3649-87C39A483ADA}|Assembly-CSharp.csproj|c:\\users\\aslan\\onedrive\\belgeler\\oceanblast\\ocean-blast\\assets\\scripts\\handler\\animationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF84BFDA-1F3F-8673-3649-87C39A483ADA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\handler\\animationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF84BFDA-1F3F-8673-3649-87C39A483ADA}|Assembly-CSharp.csproj|c:\\users\\aslan\\onedrive\\belgeler\\oceanblast\\ocean-blast\\assets\\scripts\\goalitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF84BFDA-1F3F-8673-3649-87C39A483ADA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\goalitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF84BFDA-1F3F-8673-3649-87C39A483ADA}|Assembly-CSharp.csproj|c:\\users\\aslan\\onedrive\\belgeler\\oceanblast\\ocean-blast\\assets\\scripts\\installer\\sceneinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF84BFDA-1F3F-8673-3649-87C39A483ADA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\installer\\sceneinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,19 +30,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GridManager.cs",
-              "DocumentMoniker": "C:\\Users\\aslan\\OneDrive\\Belgeler\\OceanBlast\\Ocean-Blast\\Assets\\Scripts\\Core\\GridManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\GridManager.cs",
-              "ToolTip": "C:\\Users\\aslan\\OneDrive\\Belgeler\\OceanBlast\\Ocean-Blast\\Assets\\Scripts\\Core\\GridManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Core\\GridManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAApAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Tile.cs",
+              "DocumentMoniker": "C:\\Users\\aslan\\OneDrive\\Belgeler\\OceanBlast\\Ocean-Blast\\Assets\\Scripts\\Core\\Tile.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\Tile.cs",
+              "ToolTip": "C:\\Users\\aslan\\OneDrive\\Belgeler\\OceanBlast\\Ocean-Blast\\Assets\\Scripts\\Core\\Tile.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\Tile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-26T16:44:25.898Z",
+              "WhenOpened": "2025-07-29T10:32:39.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SceneInstaller.cs",
+              "DocumentMoniker": "C:\\Users\\aslan\\OneDrive\\Belgeler\\OceanBlast\\Ocean-Blast\\Assets\\Scripts\\Installer\\SceneInstaller.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Installer\\SceneInstaller.cs",
+              "ToolTip": "C:\\Users\\aslan\\OneDrive\\Belgeler\\OceanBlast\\Ocean-Blast\\Assets\\Scripts\\Installer\\SceneInstaller.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Installer\\SceneInstaller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T09:58:29.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GoalItem.cs",
+              "DocumentMoniker": "C:\\Users\\aslan\\OneDrive\\Belgeler\\OceanBlast\\Ocean-Blast\\Assets\\Scripts\\GoalItem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GoalItem.cs",
+              "ToolTip": "C:\\Users\\aslan\\OneDrive\\Belgeler\\OceanBlast\\Ocean-Blast\\Assets\\Scripts\\GoalItem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GoalItem.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAA9wDsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T09:38:33.879Z",
               "EditorCaption": ""
             },
             {
@@ -57,67 +79,22 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Handler\\AnimationHandler.cs",
               "ToolTip": "C:\\Users\\aslan\\OneDrive\\Belgeler\\OceanBlast\\Ocean-Blast\\Assets\\Scripts\\Handler\\AnimationHandler.cs",
               "RelativeToolTip": "Assets\\Scripts\\Handler\\AnimationHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-26T16:43:58.001Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AnimSignalBus.cs",
-              "DocumentMoniker": "C:\\Users\\aslan\\OneDrive\\Belgeler\\OceanBlast\\Ocean-Blast\\Assets\\Scripts\\SignalBus\\AnimSignalBus.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\SignalBus\\AnimSignalBus.cs",
-              "ToolTip": "C:\\Users\\aslan\\OneDrive\\Belgeler\\OceanBlast\\Ocean-Blast\\Assets\\Scripts\\SignalBus\\AnimSignalBus.cs",
-              "RelativeToolTip": "Assets\\Scripts\\SignalBus\\AnimSignalBus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-26T16:43:52.719Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SceneInstaller.cs",
-              "DocumentMoniker": "C:\\Users\\aslan\\OneDrive\\Belgeler\\OceanBlast\\Ocean-Blast\\Assets\\Scripts\\Installer\\SceneInstaller.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Installer\\SceneInstaller.cs",
-              "ToolTip": "C:\\Users\\aslan\\OneDrive\\Belgeler\\OceanBlast\\Ocean-Blast\\Assets\\Scripts\\Installer\\SceneInstaller.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Installer\\SceneInstaller.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T14:12:34.722Z",
+              "WhenOpened": "2025-07-29T09:36:54.206Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AudioManager.cs",
-              "DocumentMoniker": "C:\\Users\\aslan\\OneDrive\\Belgeler\\OceanBlast\\Ocean-Blast\\Assets\\Scripts\\AudioManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\AudioManager.cs",
-              "ToolTip": "C:\\Users\\aslan\\OneDrive\\Belgeler\\OceanBlast\\Ocean-Blast\\Assets\\Scripts\\AudioManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\AudioManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Title": "GridManager.cs",
+              "DocumentMoniker": "C:\\Users\\aslan\\OneDrive\\Belgeler\\OceanBlast\\Ocean-Blast\\Assets\\Scripts\\Core\\GridManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\GridManager.cs",
+              "ToolTip": "C:\\Users\\aslan\\OneDrive\\Belgeler\\OceanBlast\\Ocean-Blast\\Assets\\Scripts\\Core\\GridManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\GridManager.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAcwL4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T14:05:56.075Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ClickSoundSignals.cs",
-              "DocumentMoniker": "C:\\Users\\aslan\\OneDrive\\Belgeler\\OceanBlast\\Ocean-Blast\\Assets\\Scripts\\SignalBus\\ClickSoundSignals.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\SignalBus\\ClickSoundSignals.cs",
-              "ToolTip": "C:\\Users\\aslan\\OneDrive\\Belgeler\\OceanBlast\\Ocean-Blast\\Assets\\Scripts\\SignalBus\\ClickSoundSignals.cs",
-              "RelativeToolTip": "Assets\\Scripts\\SignalBus\\ClickSoundSignals.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-26T16:44:33.027Z",
+              "WhenOpened": "2025-07-28T10:34:37.086Z",
               "EditorCaption": ""
             }
           ]

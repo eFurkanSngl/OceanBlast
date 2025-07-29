@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 5830068891262156407}
   - component: {fileID: 1671380213122014811}
   - component: {fileID: -8361468576767131591}
+  - component: {fileID: -4795752448612834166}
   m_Layer: 5
   m_Name: White-Goal 1
   m_TagString: Untagged
@@ -183,6 +184,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb91ce18c3f277d47a5d49de27cacc18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!225 &-4795752448612834166
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2786211347974398185}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &6017150612175417666
 GameObject:
   m_ObjectHideFlags: 0
