@@ -1,57 +1,64 @@
-
 🎮 Ocean Blast – Match & Launch Puzzle Game
-Ocean Blast, deniz temalı, eğlenceli ve tempolu bir 3D tile fırlatma puzzle oyunudur. Oyuncular, farklı renklerdeki hedef taşları fırlatarak sahadaki bloklarla eşleştirme yapar. Eşleşmeler, animasyonlarla birleşir; power-up’lar, combo’lar ve polish detayları oyun deneyimini zenginleştirir.
+
+Ocean Blast is a fast-paced, ocean-themed 3D tile-launch puzzle game.
+Players launch colored target tiles from launcher slots and match them with the grid.
+Matches trigger satisfying animations, power-ups, combos, and polished visual effects to deliver a dynamic and engaging gameplay experience.
 
 📦 Project Features
 🎯 Core Mechanics
-4 adet Launcher Box: Hedef tile’lar buraya yerleştirilir ve fırlatma burada gerçekleşir.
 
-Grid-based Tile System: 3D objeler ile oluşturulmuş renkli tile grid yapısı.
+4 Launcher Boxes: Target tiles are placed here and launched toward the grid.
 
-Matching Logic: Fırlatılan tile ile grid'in ilk satırı karşılaştırılır.
+Grid-Based Tile System: Colorful tiles arranged as 3D objects inside a structured grid.
 
-Merge System: Aynı renkten 3 hedef birleşerek tek bir güçlü hedefe dönüşür.
+Matching Logic: Launched tiles interact with the first row of the grid to check for matches.
 
-Goal Completion: Tüm hedefler tamamlandığında seviye kazanılır.
+Merge System: Three identical target tiles merge into a more powerful upgraded tile.
+
+Goal Completion: A level is cleared once all target goals are successfully completed.
 
 ⚙️ Architecture & Performance
-Event-driven yapı (SignalBus) ile sistemler arası iletişim.
 
-Zenject ile dependency injection.
+Event-Driven Communication using Zenject SignalBus for decoupled gameplay flow.
 
-Object Pooling:
+Dependency Injection with Zenject for modular and maintainable system structure.
 
-Tile, GoalItem, Splash, Particle objeleri için özel pool sistemi.
+Object Pooling Systems for:
 
-Modüler ve SOLID prensiplere uygun mimari.
+Tiles
 
-GridData ScriptableObject ile seviyeler kolayca yönetilebilir.
+GoalItems
+
+Splash effects
+
+Particle systems
+
+Fully SOLID-Compliant Modular Architecture designed for scalability and clean separation of concerns.
+
+GridData ScriptableObject enabling easy level configuration and fast iteration.
 
 🔥 Game Feel & Animations
-DOTween ile:
 
-Fırlatma animasyonu (DOJump + Scale).
+Implemented using DOTween:
 
-Merge animasyonları.
+Smooth launch animations (DOJump + Scale)
 
-Yok olma efektleri.
+Merge animations
 
-Splash Effect: Fırlatma sırasında kutunun önünde çıkan efekt.
+Destruction & particle effects
 
-Win & Game Over UI Panel geçişleri.
+Splash effects appearing during tile launch
 
-Combo/Highlight Animasyonları.
+Win & Game Over UI transitions
 
-Kamera Shake ve Zoom efektleri.
+Combo highlights & visual feedback
+
+Camera shake and zoom effects for added impact
 
 🛠️ Technologies Used
+
 Unity 2022.x
 
 C#
 
-Zenject
-
-DOTween
-
-https://github.com/user-attachments/assets/37f7def0-ca7e-4e63-a296-71b9d35ec291
-
+Zenject (Dependency Injection)
